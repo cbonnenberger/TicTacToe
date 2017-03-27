@@ -34,7 +34,7 @@ int main(int argc, char *argv[]) {
     //creating sever side socket
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (sockfd == -1) {
-        perror("Server side listening Socket could not be created!");
+        perror("La socket d'écoute n'a pas pu être créée");
         return 1;
     }
 
@@ -229,4 +229,3 @@ int main(int argc, char *argv[]) {
     close(sockfd);
     return 0;
 }
-
